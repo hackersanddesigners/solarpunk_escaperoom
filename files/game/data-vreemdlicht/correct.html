@@ -1,0 +1,96 @@
+<html>
+
+
+<head>
+    <title>
+        Congratulations!!!!!
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        body {
+
+            background-color: darkgreen;
+
+        }
+
+
+        h1 {
+            color: white
+        }
+
+
+        p {
+            color: white
+        }
+
+    </style>
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <h1>
+        Het goede antwoord is.
+
+
+    </h1>
+
+    <p>
+
+        AVEVM/WIRV/GDVV/MFO/AVH/ZXSG
+
+
+    </p>
+    <p>
+
+
+
+
+        Groen
+
+    </p>
+
+
+
+
+    <input class="code" />
+    <button id="controleer">controleer de code</button>
+
+
+    <script lang="javascript">
+        let geheim = "732068";
+
+        document.getElementById("controleer").addEventListener('click', function() {
+            let code = document.querySelector(".code");
+            if (code.value == geheim) {
+                document.location = "gedaan.html";
+            } else {
+                document.location = "fout.html";
+            }
+
+
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

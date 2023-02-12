@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Solarpunks!</title>
+	<style language="css">
+		/* deze pagina heeft een menu balk aan de bovenkant van de pagina.
+		Omdat hij position: fixed heeft scrollt hij niet mee met de rest van pagina */
+		header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			height: 150px;
+			background-color: white;
+			text-align: center;
+		}
+
+		/* De body heeft een kleurverloop (gradient) als achtergrond kleur */
+		body {
+			background-color: white;
+			font-family: 'Helvetica', Arial, sans-serif;
+			font-size: 22px;
+			background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(0, 203, 203, 1) 100%);
+			background-repeat: no-repeat;
+			margin-top: 170px;
+		}
+
+
+		/* Alle tekst in een paragraph tag gecentreerd */
+		p {
+			text-align: center;
+		}
+
+		.card {
+			background-color: cornflowerblue;
+			padding: 20px;
+			border-radius: 20px;
+			box-shadow: inset 0 0 10px black;
+		}
+
+		/* display: flex zorgt ervoor dat de fotos naast en niet boven elkaar komen */
+		.columns {
+			display: flex;
+		}
+
+		h3 {
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<header>
+		<h1 style="text-align:center;">
+			Hallo Solarpunks!
+		</h1>
+
+		<a href="index.html">Home</a>
+		<a href="about.html">About</a>
+		<a href="contact.html">Contact</a>
+	</header>
+
+	<!-- paragraph met een emoij -->
+	<p style="text-align: center">&#128151;</p>
+
+	<p class="card" style="text-align:left;"> &#128516; De eerste aanwijzing is van Loes & Pernilla (niets verklappen
+		jullie twee!) </p>
+
+	<p class="card" style="text-align:center;"> &#128582; Hieronder zie je drie afbeeldingen van een plek binnen Page Not
+		Found. </p>
+
+	<p class="card" style="text-align:right"> &#128525; Kijk goed, kun je deze plek vinden? Hier is een pakket verstopt!
+	</p>
+
+	<p class="columns">
+		<img src="clue1.jpeg" width="70%">
+		<img src="clue2.jpeg" width="70%">
+		<img src="clue3.jpeg" width="70%">
+	</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        Computer van de kapitein
+    </title>
+    <style>
+        h1 {
+            background-color: black;
+        }
+
+        p {
+            background-color: black;
+        }
+
+        h1 {
+            font-style: italic
+        }
+
+        h1 {
+            color: white
+        }
+
+        p {
+            font-style: italic
+        }
+
+        p {
+            color: white
+        }
+
+        body {
+            background-color: black;
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <img src="rick-roll-rick-rolled.gif">
+    <h1>
+        Ik de kapitein houdt erg veel van Rick Astley
+
+    </h1>
+
+
+    <p>Om de motor te starten heb je een 6 cijferige code nodig, deze website mag alleen worden gebruikt door de kapitein dus er zit een extra slot op, kraak de code en start de motor </p>
+
+    <p>Voer hier de code in</p>
+
+    <input class="code" />
+    <button id="controleer">controleer de code</button>
+
+    <script lang="javascript">
+        let geheim = "never gonna make you cry";
+        document.getElementById("controleer").addEventListener('click', function() {
+            let code = document.querySelector(".code");
+            if (code.value == geheim) {
+                document.location = "correct.html";
+            } else {
+                document.location = "fout.html";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

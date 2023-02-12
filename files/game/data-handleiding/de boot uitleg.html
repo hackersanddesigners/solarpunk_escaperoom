@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+    <title>De online handleiding voor de boot.</title>
+
+    <style>
+        h1 {
+            color: aqua
+        }
+
+        h2 {
+            color: darkturquoise
+        }
+
+        body {
+            background-color: deepskyblue;
+        }
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+    <h1>De uitleg voor het dashboard van de boot.</h1>
+    <p>Voer de code in:</p>
+
+    <input class="code" />
+    <button class="controleer">controleer</button>
+
+
+    <script lang="javascript">
+        let geheim = "das boot";
+        let veld = document.querySelector(".code");
+        let knop = document.querySelector(".controleer");
+
+        knop.addEventListener("click", function() {
+            if (veld.value == geheim) {
+                document.location = "goed.html";
+            } else {
+                document.location = "fout.html";
+            }
+        });
+
+    </script>
+
+    <p>
+        <img src="onderwater.png" width="768" height="768">
+
+    </p>
+
+    <p>
+        <img src="geweldige%20vis.gif" width="768" height="768">
+    </p>
+
+</body>
+
+</html>

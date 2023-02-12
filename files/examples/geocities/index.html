@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Solarpunks!</title>
+
+	<style>
+		/* Laad het lettertype */
+		@font-face {
+			font-family: 'anthony';
+			src: url("anthony.woff") format('woff');
+		}
+
+		/* body contains everything in the page. */
+		body {
+			background-color: yellow;
+			/* hier zeggen we dat de body (en alles daarin), het lettertype moet gebruiken */
+			font-family: 'anthony', Fallback, sans-serif;
+			font-size: 40px;
+			color: skyblue;
+			text-align: center;
+			word-break: break-all;
+		}
+
+		p {
+			font-size: 35px;
+			color: mediumvioletred;
+		}
+
+		/* de white-space: pre; rule zorgt ervoor dat we 
+		meerdere spaties naast elkaar kunnen gebruiken. 
+		Pre staat voor precies, dus het komt net zo op de pagina
+		als dat je het hebt ingetypt. */
+		.ascii-art {
+			font-family: monospace;
+			white-space: pre;
+			font-size: 10px;
+			text-align: center;
+		}
+
+		.button {
+			border-width: 10px;
+			border-radius: 50%;
+			width: 120px;
+			height: 120px;
+			opacity: 0.75;
+			margin: 0 auto;
+		}
+
+		.fotokader {
+			background-image: url(background.gif);
+			border-radius: 50px;
+		}
+
+		/* deze selector werkt alleen op img tags die in een element met de class .clues
+		zitten. Dus andere images worden niet beinvloed */
+		.fotokader img {
+			max-height: 50vh;
+			display: block; /* deze 2 regels zorgen ervoor dat de fotos op een eigen regel staan */
+			margin: 50px auto; 
+			width: auto;
+			border: 10px dotted red;
+			border-left-color: green;
+			border-right-color: pink;
+			border-bottom-color: aqua;
+			padding: 10px;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<h1>Hallo Solarpunks!</h1>
+
+	<!-- 
+Een playbutton voor een geluid. De code hiervoor zit helemaal onder aan de pagina.
+Als je het niet wil gebruiken kan je het verwijderen. 
+ -->
+	<button id="button1" class="button" style="background-color: #8effff;">play me</button>
+
+	<!-- mannetjes -->
+	<p>
+		<img src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img
+			src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img
+			src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img
+			src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" /><img src="ani-constructionguy.gif" />
+	</p>
+
+	<!-- diamantjes -->
+	<img src="a03.gif" />
+
+
+	<p style="text-align:left;">Deze tekst staat links.</p>
+
+	<p>Deze tekst is gecentreerd omdat de body text-align: center is de style heeft.</p>
+
+	<p style="text-align:right">Deze tekst staat rechts</p>
+
+	<!-- dollar animatie -->
+	<img src="dollarspindownd.gif" />
+
+	<!-- kadertje met fotos -->
+	<p class="fotokader">
+		<img src="clue1.jpeg" width="70%">
+		<img src="clue2.jpeg" width="70%">
+		<img src="clue3.jpeg" width="70%">
+	</p>
+
+	<!-- vlammetje -->
+	<img src="fire.gif" /><img src="fire.gif" /><img src="fire.gif" />
+
+	<!-- ascii art -->
+	<div class="ascii-art">
+
+		╋╋╋╋╋╋┏┓╋╋╋╋╋╋╋╋╋╋╋╋╋╋┏┓
+		╋╋╋╋╋╋┃┃╋╋╋╋╋╋╋╋╋╋╋╋╋╋┃┃
+		┏━━┳━━┫┃┏━━┳━┳━━┳┓┏┳━┓┃┃┏┓
+		┃━━┫┏┓┃┃┃┏┓┃┏┫┏┓┃┃┃┃┏┓┫┗┛┛
+		┣━━┃┗┛┃┗┫┏┓┃┃┃┗┛┃┗┛┃┃┃┃┏┓┓
+		┗━━┻━━┻━┻┛┗┻┛┃┏━┻━━┻┛┗┻┛┗┛
+		╋╋╋╋╋╋╋╋╋╋╋╋╋┃┃
+		╋╋╋╋╋╋╋╋╋╋╋╋╋┗┛
+	</div>
+
+	<!-- Hieronder volgt wat javascript om een geluid te spelen
+	als er op de knop wordt gedrukt. Let er op dat de naam van de 
+	mp3 precies gelijk is aan je bestandsnaam -->
+	<script type="text/javascript" src="./Tone.min.js"></script>
+	<script>
+		var gn;
+
+		//sound
+		var sound1 = new Tone
+			.Player("./modem_8000.mp3", function () {
+
+				document
+					.getElementById('button1')
+					.onclick = function () {
+						if (sound1.state == 'stopped')
+							sound1.start();
+						else if (sound1.state == 'started')
+							sound1.stop();
+					};
+			})
+			.toMaster();
+		sound1.loop = true;
+	</script>
+
+</body>
+
+</html>
