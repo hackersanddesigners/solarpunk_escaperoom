@@ -33,7 +33,14 @@ In the files you can find the week's program outline, slides with exercises we d
 
 ![](./images/escape3.jpeg)
 
+![](./images/escape8.JPG)
+
 ![](./images/escape2.jpeg)
+
+![](./images/escape9.JPG)
+
+![](./images/escape7.JPG)
+
 
 ## Program
 
