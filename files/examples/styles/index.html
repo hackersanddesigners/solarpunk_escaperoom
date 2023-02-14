@@ -1,0 +1,271 @@
+<html>
+
+<!--Dit is een comment-->
+<!--Die zie je wel in de code-->
+<!--Maar niet aan de voorkant van de website-->
+
+<!--in de head zet je de titel van je site-->
+<!--hier kun je ook al je CSS regels (styles) zetten-->
+
+<head>
+
+    <title>Mijn website naam</title>
+
+    <style>
+        @font-face {
+            font-family: myFont1;
+            src: url(Typefesse_Claire-Obscure.otf);
+        }
+
+        @font-face {
+            font-family: myFont2;
+            src: url(CirrusCumulus.otf);
+        }
+
+        body {
+            background-image: linear-gradient(to bottom right, beige, lightblue);
+        }
+
+        h1 {
+            color: white;
+            background: linear-gradient(pink, yellow, black);
+            font-size: 80px;
+            font-family: myFont2, sans-serif;
+            word-spacing: 10px;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: helvetica, sans-serif;
+            font-size: 50px;
+            color: red;
+            text-shadow: 6px 6px 8px orange;
+
+        }
+
+        p {
+            font-family: myFont2;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        div {
+            font-family: myFont1;
+            color: azure;
+            font-size: 80px;
+            background: linear-gradient(teal, yellow);
+            text-align: center;
+        }
+
+        h2 {}
+
+        h3 {
+            font-family: helvetica, sans-serif;
+            font-size: 50px;
+            color: cornflowerblue;
+            text-shadow: 3px 3px 5px fuchsia;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            opacity: 0.3;
+            box-shadow: 10px 10px 30px 10px rgba(0, 0, 255, .4);
+            border-radius: 30px;
+            border: solid #5B6DCD 2px;
+        }
+
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 12px 20px;
+            margin: auto;
+            box-sizing: border-box;
+            background: linear-gradient(lightblue, pink);
+            font-size: 24px;
+            letter-spacing: 14px;
+            color: blue;
+            border: none;
+        }
+
+        input {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            padding: 20px 6px;
+            box-sizing: border-box;
+            background: linear-gradient(white, lightgray);
+            font-size: 14px;
+            letter-spacing: 8px;
+            color: blue;
+            font-style: italic;
+            text-align: center;
+            border: solid darkgray 2px;
+        }
+
+
+        .hilight {
+            background-color: yellow;
+            box-shadow: 0 0 40px rgba(255, 255, 0, .8);
+        }
+
+        .big {
+            font-size: 60px;
+            opacity: 0.7;
+        }
+
+        .dotbox {
+            border: 6px dotted yellow;
+            text-align: right;
+        }
+
+        .tekening {
+            text-align: left;
+            font-size: 30px;
+            letter-spacing: 18px;
+            box-sizing: border-box;
+            width: 80%;
+            border: solid #5B6DCD 2px;
+            padding: 50px;
+            border-radius: 10% 300% 80% 70%;
+        }
+
+        .verstopt {
+            background-color: floralwhite;
+            color: floralwhite;
+        }
+
+        input[type=button] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background: linear-gradient(lightblue, yellow);
+            font-size: 24px;
+            letter-spacing: 14px;
+            color: blue;
+            border: none;
+        }
+
+    </style>
+
+    <script lang="javascript">
+        function process() {
+            var images = document.getElementsByTagName("img");
+            for (var i = 0; i < images.length; i++) {
+                if (images[i].getAttribute("alt") == null) {
+                    images[i].style.border = "20px solid red";
+                }
+            }
+        }
+
+    </script>
+
+    <script lang="javascript">
+        function process2() {
+            var images = document.getElementsByTagName("img");
+            for (var i = 0; i < images.length; i++) {
+                if (images[i].getAttribute("alt") == null) {
+                    images[i].style.border = "solid #5B6DCD 2px";
+                }
+            }
+        }
+
+    </script>
+
+    <script lang="javascript">
+        alert("Do you really want to do this???");
+
+    </script>
+
+
+</head>
+
+
+<!--in de body zet je al je content-->
+<!--paragrafen, foto's en subtitels-->
+
+<body>
+
+    <h1>Dit is <u>de</u> <b>titel</b> van je <i>pagina</i></h1>
+    <p>Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. Hallo dit is een paragraaf. </p>
+
+    <h3>Afbeeldingen zonder alt text?</h3>
+    <input type="button" onclick="process()" value=">>> show me now <<<">
+
+    <h3>Nu weer gewoon</h3>
+    <input type="button" onclick="process2()" value=">>> terugzetten <<<">
+
+    <p></p>
+
+    <img src="cat.jpeg">
+
+    <p></p>
+
+    <input class="code" placeholder="Welk dier is dit?" />
+    <button class="controleer">controleer</button>
+
+    <script lang="javascript">
+        let geheim = "kat";
+        let veld = document.querySelector(".code");
+        let knop = document.querySelector(".controleer");
+
+        knop.addEventListener("click", function() {
+            if (veld.value == geheim) {
+                document.location = "goed.html";
+            } else {
+                document.location = "fout.html";
+            }
+        });
+
+    </script>
+
+    <p></p>
+
+
+    <div>
+        Dit is een div jajajaja
+    </div>
+
+    <p class="big">
+        &#128512; &#128516; &#128525; &#128151;
+    </p>
+
+    <p>Maak er zoveel je wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil
+        <br><br><br> <b><u>- break -</u></b> <br><br><br>
+        wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil wil
+    </p>
+
+    <p class="verstopt">
+        Mij zie je lekker niet
+    </p>
+
+    <h2>Dit is een stijlloze h2 subtitel</h2>
+    <p>Dit is nog een paragraaf</p>
+    <p>Of twee</p>
+
+    <h3>Dit is een h3 gestylede subtitel</h3>
+
+    <p class="hilight">Dit is een paragraaf met de class "highlight" eraan toegekend</p>
+
+    <p class="dotbox">Dit is een paragraaf met de class "dotbox" eraan toegekend</p>
+
+    <p class="tekening">Dit is een paragraaf met de class "tekening" eraan toegekend</p>
+
+    <img src="catml.jpg">
+
+    <p>Dit is een emoji &#128525; </p>
+    <p>Die beginnen altijd met &#, en daarna een code</p>
+    <p>En hier kun je alle emoji codes vinden:
+        <a href="https://www.w3schools.com/charsets/ref_emoji.asp">w3 schools reference voor emoji</a>
+    </p>
+
+
+</body>
+
+</html>
