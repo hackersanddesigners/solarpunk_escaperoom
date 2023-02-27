@@ -26,31 +26,31 @@ In the files you can find the week's program outline, slides with exercises we d
 
 ## Slides
 
-The program had two blocks of technical instruction, marked pink in the program below. In the first block talked a bit about Solarpunk and our relationship to the internet and our scrolling behaviour. We did a little exercise guessing how much we scroll per year on average. The answer was on a [https://github.com/hackersanddesigners/solarpunk_escaperoom/tree/main/files/data-scrolllll](little captive portal website created on an ESP module). After a bit of scrolling it is revealed that the actual answer is taped below one of the seats in the classroom...
-Then we looked at the ESP32 module, possibilities, limitations and explained how the captive network page that the participants had just seen works. The slides for this part can be found [https://github.com/hackersanddesigners/Esp32-introductie](here) and be viewed [https://hackersanddesigners.github.io/Esp32-introductie/](online here).
-The second part was all about HTML, what is it, how does it work. What is CSS and how can you use it. The students were challenged to make a simple mini website for themselves (Note for future iteration: have a clear assignment here.) The slides for this part can be found [https://github.com/hackersanddesigners/html-css-slides-introductie](here) and be viewed [https://hackersanddesigners.github.io/html-css-slides-introductie](online here).
+The program had two blocks of technical instruction, marked pink in the program below. In the first block talked a bit about Solarpunk and our relationship to the internet and our scrolling behaviour. We did a little exercise guessing how much we scroll per year on average. The answer was on a [little captive portal website created on an ESP module](https://github.com/hackersanddesigners/solarpunk_escaperoom/tree/main/files/data-scrolllll). After a bit of scrolling it is revealed that the actual answer is taped below one of the seats in the classroom...
+Then we looked at the ESP32 module, possibilities, limitations and explained how the captive network page that the participants had just seen works. The slides for this part can be found [here](https://github.com/hackersanddesigners/Esp32-introductie) and be viewed [online here](https://hackersanddesigners.github.io/Esp32-introductie/).
+The second part was all about HTML, what is it, how does it work. What is CSS and how can you use it. The students were challenged to make a simple mini website for themselves (Note for future iteration: have a clear assignment here.) The slides for this part can be found [here](https://github.com/hackersanddesigners/html-css-slides-introductie) and be viewed [here online](https://hackersanddesigners.github.io/html-css-slides-introductie).
 
 ## Impression
 
-![](./images/spel2.png)
+![a puzzle game made from cardboard, solving it would give a password, next to it the corresponding website, with a field for the password](./images/spel2.png)
 
-![](./images/escape1.jpeg)
+![a cardboard 'bomb' that had to be dismantled](./images/escape1.jpeg)
 
-![](./images/escape3.jpeg)
+![color coded lock](./images/escape3.jpeg)
 
-![](./images/escape8.JPG)
+![the captains computer, Rick Ashley fan apparently](./images/escape8.JPG)
 
-![](./images/escape2.jpeg)
+![parents of the participants, solving the puzzle game](./images/escape2.jpeg)
 
-![](./images/escape9.JPG)
+![picture of a phone showing another one of the mini wabsites with hints](./images/escape9.JPG)
 
-![](./images/escape7.JPG)
+![picture of a carboard construction of a radio, part of one of the puzzles](./images/escape7.JPG)
 
 
 ## Program
 
-![](./images/programma.png)
+![block schedule of the week](./images/programma.png)
 
-![](./images/zeewier.gif) *Amazing pixel art by one of the participants.*
+![Amazing pixel art by one of the participants](./images/zeewier.gif) *Amazing pixel art by one of the participants.*
 
 
