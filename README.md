@@ -24,6 +24,11 @@ The technical setup is described in the solar punk scavenger hunt workshops we d
 
 In the files you can find the week's program outline, slides with exercises we did, example code, and some code participants made. Other than in the other Solarpunk workshops so far, the participants made slightly more complex websites that includes some scripting. This allowed them to ask users for input (e.g. a code) that they could verify before sending user to a next page. 
 
+## Slides
+
+The program had two blocks of technical instruction, marked pink in the program below. In the first block talked a bit about Solarpunk and our relationship to the internet and our scrolling behaviour. We did a little exercise guessing how much we scroll per year on average. The answer was on a [https://github.com/hackersanddesigners/solarpunk_escaperoom/tree/main/files/data-scrolllll](little captive portal website created on an ESP module). After a bit of scrolling it is revealed that the actual answer is taped below one of the seats in the classroom...
+Then we looked at the ESP32 module, possibilities, limitations and explained how the captive network page that the participants had just seen works. The slides for this part can be found [https://github.com/hackersanddesigners/Esp32-introductie](here) and be viewed [https://hackersanddesigners.github.io/Esp32-introductie/](online here).
+The second part was all about HTML, what is it, how does it work. What is CSS and how can you use it. The students were challenged to make a simple mini website for themselves (Note for future iteration: have a clear assignment here.) The slides for this part can be found [https://github.com/hackersanddesigners/html-css-slides-introductie](here) and be viewed [https://hackersanddesigners.github.io/html-css-slides-introductie](online here).
 
 ## Impression
 

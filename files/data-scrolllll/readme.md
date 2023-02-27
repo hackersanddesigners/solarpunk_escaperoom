@@ -1,0 +1,2 @@
+This directory contains the files for the 'how much do you scroll per year' game. 
+	Copy to this directory to the WifizineThrowie directory of [https://github.com/hackersanddesigners/WifiZineThrowie_ScavengerHunt/tree/master/code/WifiZineThrowie](this) repo and rename to /data.
